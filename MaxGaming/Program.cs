@@ -28,10 +28,10 @@ namespace MaxGaming
 					urlList[1] = "https://us.maxgaming.com/us/wireless-mouses/model-o-wireless-gaming-mouse-black";
 				}
 
-				var website = new Website(_titleId, urlList);
-
 				do
 				{
+					var website = new Website(_titleId, urlList);
+
 					_printer.ShowInfo("Идет поиск скидок...", InformationType.info);
 
 					var docs = await website.GetDocumentsAsync();
