@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace MaxGaming.Parse
 {
-	public class Website
+	public class MaxGaming
 	{
 		private readonly List<Product> _products;
 		public string TitleId { get; }
 		public string[] Url { get; }
 
-		public Website(string titleId, params string[] url)
+		public MaxGaming(string titleId, params string[] url)
 		{
 			var validatedUrlList = ValidateUrlList(url);
 			if (url.Length == 0 || url is null || validatedUrlList is null

@@ -30,7 +30,7 @@ namespace MaxGaming
 
 				do
 				{
-					var website = new Website(_titleId, urlList);
+					var website = new Parse.MaxGaming(_titleId, urlList);
 
 					_printer.ShowInfo("Идет поиск скидок...", InformationType.info);
 
